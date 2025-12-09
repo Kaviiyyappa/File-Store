@@ -59,12 +59,12 @@ PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), True
 VERIFY_MODE = bool(environ.get('VERIFY_MODE', True)) # Set True or False
 
 # If Verify Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
-SHORTLINK_URL = environ.get("SHORTLINK_URL", "xtglinks.com") # shortlink domain without https://
+SHORTLINK_URL = environ.get("SHORTLINK_URL", "xtglinks.com/") # shortlink domain without https://
 SHORTLINK_API = environ.get("SHORTLINK_API", "1a5cdcf705e5f8b6a9fcb98f7861637df2cbda37") # shortlink api
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/Howtopenthelink/4") # how to open link 
 
 # Website Info:
-WEBSITE_URL_MODE = bool(environ.get('WEBSITE_URL_MODE', False)) # Set True or False
+WEBSITE_URL_MODE = bool(environ.get('WEBSITE_URL_MODE', True)) # Set True or False
 
 # If Website Url Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
 WEBSITE_URL = environ.get("WEBSITE_URL", "https://ikbryt.blogspot.com/2025/11/ikbrytlinks.html") # For More Information Check Video On Yt - @Tech_VJ
@@ -80,7 +80,7 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("URL", "https://testofvjfilter-1fa60b1b8498.herokuapp.com/")
+URL = environ.get("URL", "https://straightforward-daryl-ikbryt91-fa5a8521.koyeb.app/")
 
 
 # Don't Remove Credit Tg - @VJ_Bots
